@@ -1,0 +1,42 @@
+/* .teacher-input-image-box :hover {
+  .teacher-input-image-hover {
+    display: flex;
+  }
+} */
+
+.teacher-input-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.teacher-input-image:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.5);
+  position: absolute;
+  z-index: 1;
+}
+
+.teacher-input-image:hover {
+  display: flex;
+  .teacher-input-image-icon {
+    display: flex;
+  }
+}
+
+.teacher-input-image-icon {
+  position: absolute;
+  color: red;
+  display: none;
+  z-index: 2;
+}

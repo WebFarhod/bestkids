@@ -1,0 +1,10 @@
+.class-image-remove:hover {
+  .class-image-icon-remove {
+    display: block;
+  }
+}
+.class-image-icon-remove {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}

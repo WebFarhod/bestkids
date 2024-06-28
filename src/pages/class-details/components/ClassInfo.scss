@@ -1,0 +1,115 @@
+.bd-class-details-thumb {
+  border-radius: 32px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    min-width: 100%;
+    border-radius: 32px;
+  }
+}
+
+.bd-class-details-widget-content {
+  padding: 30px 32px 50px;
+  border-radius: 32px;
+  background-color: var(--bd-theme-6);
+
+  .bd-class-details-widget-title {
+    font-size: 45px;
+  }
+
+  @media (max-width: 575px) {
+    .bd-class-details-widget-title {
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px),
+    only screen and (min-width: 768px) and (max-width: 991px) {
+    .bd-class-details-widget-title {
+      font-size: 45px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bd-class-details-widget-title {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .bd-class-details-author-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+
+    .bd-class-details-author {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .bd-class-details-author-thumb {
+        height: 73px;
+        width: 73px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .bd-class-details-author-name {
+        span {
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+
+        h5 {
+          font-size: 23px;
+          a {
+            color: inherit;
+            outline: none;
+            border: none;
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    .bd-class-details-cat {
+      position: relative;
+
+      span {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      h5 {
+        font-size: 23px;
+      }
+    }
+    .bd-class-details-cat:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background-color: var(--bd-theme-2);
+      top: 0;
+      inset-inline-start: -25px;
+    }
+    @media only screen and (max-width: 770px) {
+      .bd-class-details-cat:before {
+        content: none;
+      }
+    }
+  }
+}

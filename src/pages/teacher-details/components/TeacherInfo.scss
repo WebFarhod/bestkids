@@ -1,0 +1,131 @@
+.bd-teacher-widget {
+  border-radius: 32px;
+  overflow: hidden;
+  height: 100%;
+
+  .bd-teacher-widget-thumb {
+    height: 100%;
+    width: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 32px;
+    }
+  }
+  @media (max-width: 575px) {
+    .bd-teacher-widget-thumb {
+      height: 350px;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .bd-teacher-widget-thumb {
+      height: 400px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .bd-teacher-widget-thumb {
+      height: 450px;
+    }
+  }
+
+  .bd-teacher-widget-content {
+    padding: 30px 32px 40px;
+    border-radius: 32px;
+
+    .bd-teacher-widget-title {
+      font-size: 45px;
+    }
+    @media (max-width: 575px) {
+      .bd-teacher-widget-title {
+        font-size: 30px;
+      }
+    }
+    @media only screen and (min-width: 576px) and (max-width: 767px),
+      only screen and (min-width: 768px) and (max-width: 991px) {
+      .bd-teacher-widget-title {
+        font-size: 45px;
+      }
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .bd-teacher-widget-title {
+        font-size: 40px;
+      }
+    }
+
+    .bd-teacher-widget-tag {
+      color: var(--bd-theme-1);
+      margin-bottom: 25px;
+      display: inline-block;
+    }
+
+    p {
+      line-height: 30px;
+      margin-bottom: 25px;
+    }
+
+    .bd-teacher-widget-social {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 10px;
+
+        li {
+          margin: 0;
+          padding: 0;
+          a {
+            height: 38px;
+            width: 38px;
+            display: inline-block;
+            text-align: center;
+            line-height: 38px;
+            border-radius: 50%;
+            background-color: var(--bd-theme-1);
+            color: var(--bd-common-white);
+          }
+        }
+      }
+    }
+
+    .bd-teacher-skill {
+      span {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        display: inline-block;
+        margin-bottom: 18px;
+      }
+    }
+
+    .bd-teacher-widget-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        line-height: 30px;
+        margin-bottom: 25px;
+
+        a {
+          color: inherit;
+          outline: none;
+          border: none;
+          background: transparent;
+        }
+        a:hover {
+          color: var(--bd-theme-1);
+        }
+      }
+    }
+  }
+}
+.theme-bg-6 {
+  background-color: var(--bd-theme-6);
+}

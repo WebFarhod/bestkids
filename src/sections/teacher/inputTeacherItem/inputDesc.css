@@ -1,0 +1,26 @@
+.quill.react-quill {
+  .ql-toolbar {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    }
+    .ql-container {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      p{
+        /* font-family: Public Sans, sans-serif !important; */
+        color: black !important;
+        /* font-weight: 400;
+
+
+
+        /* font: inherit; */
+        /* letter-spacing: inherit;
+        color: currentColor;
+        padding: 4px 0 5px;
+        border: 0;
+        box-sizing: content-box;
+        background: none; */
+        /* height: 1.4375em;  */
+      }
+    }
+  }

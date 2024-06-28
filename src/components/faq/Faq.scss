@@ -1,0 +1,121 @@
+.bd-faq {
+}
+.bd-faq-content {
+  -webkit-margin-end: 86px;
+  margin-inline-end: 86px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 992px) and (max-width: 1199px) {
+  .bd-faq-content {
+    -webkit-margin-end: 20px;
+    margin-inline-end: 20px;
+  }
+}
+@media (max-width: 575px),
+  only screen and (min-width: 576px) and (max-width: 767px) {
+  .bd-faq-content {
+    -webkit-margin-end: 0;
+    margin-inline-end: 0;
+  }
+}
+
+.accordion__item {
+  border: 1px solid var(--bd-grey-1);
+  margin-bottom: 25px;
+  border-radius: 16px;
+
+  color: var(--bs-accordion-color);
+  background-color: var(--bs-accordion-bg);
+  border: var(--bs-accordion-border-width) solid
+    var(--bs-accordion-border-color);
+
+  .accordion__heading {
+    margin-bottom: 0;
+
+    .accordion__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      padding: 15px 25px;
+      height: 72px;
+      font-size: 16px;
+      font-weight: var(--bd-fw-medium);
+      color: var(--bd-common-black);
+      text-transform: uppercase;
+      -webkit-padding-end: 8px;
+      padding-inline-end: 8px;
+      justify-content: space-between;
+      text-align: left;
+      background: var(--bd-common-white);
+      text-transform: capitalize;
+      position: relative;
+      -webkit-padding-end: 60px;
+      padding-inline-end: 60px;
+      border: none;
+      transition: color 0.15s ease-in-out;
+      .faq-icon-btn {
+        font-size: 32px;
+        position: absolute;
+        right: 15px;
+      }
+      .div-minus {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bd-common-white);
+        .icon-minus {
+          color: #212529;
+          font-size: 22px;
+        }
+      }
+    }
+
+    .accordion-head-active {
+      border-radius: 16px;
+      background-color: var(--bd-theme-2);
+      color: var(--bd-common-white);
+    }
+  }
+
+  .aniscroll-height {
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+
+    height: auto;
+    .acc-body-size {
+      .accordion__panel {
+        padding: 21px 25px 11px;
+
+        // padding: var(--bs-accordion-body-padding-y)
+        //   var(--bs-accordion-body-padding-x);
+
+        p {
+          font-size: 18px;
+
+          font-family: var(--bd-ff-p);
+          font-size: var(--bd-fz-p);
+          font-weight: var(--bd-fw-normal);
+          color: var(--bd-text-body);
+          margin-bottom: 15px;
+          line-height: 30px;
+          transition: 3s linear;
+          overflow: hidden;
+          display: block !important;
+        }
+      }
+    }
+  }
+  .aniscroll-height-show {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .aniscroll-height-show::-webkit-scrollbar {
+    display: none;
+  }
+}

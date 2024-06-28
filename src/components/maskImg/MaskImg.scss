@@ -1,0 +1,32 @@
+.bd-promotion-thumb-wrapper {
+  .bd-promotion-thumb {
+    display: inline-flex;
+    .bd-promotion-thumb-mask {
+      mask-image: url(./mask.svg);
+      // WebkitMaskImage: `url(${mask})`,
+      -webkit-mask: url(./mask.svg);
+      img {
+        color: transparent;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .bd-promotion-shape {
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    animation: rotate 3s infinite alternate;
+    transform-origin: 0 -280px;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(15deg);
+    }
+
+    100% {
+      transform: rotate(-25deg);
+    }
+  }
+}

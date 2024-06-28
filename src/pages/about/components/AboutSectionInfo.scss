@@ -1,0 +1,64 @@
+.bd-counter-area-2 {
+  .bd-counter-2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 50px 20px;
+    border: 1px solid var(--bd-grey-1);
+    justify-content: center;
+
+    .bd-counter-2-icon {
+      font-size: 55px;
+      color: var(--bd-common-white);
+      height: 94px;
+      width: 94px;
+      background-color: var(--bd-theme-2);
+      text-align: center;
+      line-height: 94px;
+      border-radius: 46% 54% 41% 59%/33% 44% 56% 67%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bd-counter-2-content {
+      font-family: var(--bd-ff-body);
+      gap: 15px;
+      .bd-counter-2-number span {
+        font-size: 64px;
+        line-height: 80px;
+        font-weight: 600;
+      }
+
+      .bd-counter-2-number .bd-promotion-counter-number span,
+      .bd-counter-2-text span {
+        color: var(--bd-common-black);
+      }
+    }
+    .bd-counter-2-content,
+    .bd-counter-2-number {
+      display: flex;
+      align-items: center;
+    }
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+      .bd-counter-2-icon {
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+      }
+    }
+  }
+  @media (max-width: 575px) {
+    .bd-counter-2 {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bd-counter-2 {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  }
+}

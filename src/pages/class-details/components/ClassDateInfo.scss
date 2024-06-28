@@ -1,0 +1,94 @@
+.bd-shop-cat-wrap {
+  .bd-shop-cat {
+    min-height: 290px;
+    width: 290px;
+    background: var(--bd-theme-6);
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0;
+    transition: all 0.5s ease-out 0s;
+    filter: drop-shadow(4px 4px 0 #ffe1bd);
+
+    .bd-shop-cat-content {
+      .bd-shop-cat-title.cat-1 {
+        border-radius: 44% 56% 44% 56%/58% 47% 53% 42%;
+      }
+
+      .bd-shop-cat-title.cat-2 {
+        background-color: var(--bd-theme-2);
+        border-radius: 81% 19% 23% 77%/58% 52% 48% 42%;
+      }
+
+      .bd-shop-cat-title.cat-3 {
+        border-radius: 37% 63% 61% 39%/52% 49% 51% 48%;
+      }
+
+      .bd-shop-cat-title.cat-4 {
+        background-color: var(--bd-theme-3);
+        border-radius: 42% 58% 37% 63%/52% 37% 63% 48%;
+      }
+
+      .bd-shop-cat-title {
+        font-weight: 600;
+        height: 120px;
+        width: 120px;
+        padding: 0;
+        margin-bottom: 40px;
+        background-color: var(--bd-theme-1);
+
+        .bd-shop-cat-icon {
+          color: var(--bd-common-white);
+          font-size: 50px;
+          line-height: 120px;
+          text-align: center;
+        }
+      }
+
+      h6 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+      }
+    }
+  }
+
+  .bd-shop-cat:hover {
+    filter: drop-shadow(4px 4px 0 var(--bd-theme-2));
+  }
+
+  @media (max-width: 575px) {
+    .bd-shop-cat {
+      min-height: 100%;
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .bd-shop-cat {
+      min-height: 245px;
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .bd-shop-cat {
+      min-height: 290px;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bd-shop-cat {
+      min-height: auto;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .bd-shop-cat {
+      min-height: 260px;
+      width: 260px;
+    }
+  }
+}

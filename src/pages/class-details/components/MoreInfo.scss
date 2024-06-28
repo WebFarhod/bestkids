@@ -1,0 +1,31 @@
+.bd-class-details-widget-content {
+  padding: 30px 32px 50px;
+  border-radius: 32px;
+  background-color: var(--bd-theme-6);
+
+  .bd-class-details-list {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      li {
+        list-style-type: none;
+        color: var(--bd-common-black);
+        display: flex;
+        gap: 10px;
+
+        .icon-right {
+          background: #ffedd7;
+          height: 20px;
+          width: 20px;
+          font-size: 15px;
+          border-radius: 50%;
+          color: var(--bd-theme-2);
+        }
+      }
+    }
+  }
+}

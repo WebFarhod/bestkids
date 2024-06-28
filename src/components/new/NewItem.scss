@@ -1,0 +1,115 @@
+.bd-blog {
+  border-radius: 24px;
+  overflow: hidden;
+
+  .bd-blog-thumb {
+    width: 416px;
+    height: 277px;
+    overflow: hidden;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease-out 0s;
+      vertical-align: middle;
+    }
+  }
+
+  .bd-blog-thumb:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      hsla(0, 0%, 100%, 0) 0,
+      hsla(0, 0%, 100%, 0.3)
+    );
+    transform: skewX(-25deg);
+  }
+
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+
+  .bd-blog-thumb:hover img {
+    transform: scale(1.1);
+  }
+
+  .bd-blog-thumb:hover:before {
+    animation: shine 0.8s;
+  }
+
+  @media (max-width: 575px),
+    only screen and (min-width: 576px) and (max-width: 767px),
+    only screen and (min-width: 768px) and (max-width: 991px),
+    only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bd-blog-thumb {
+      width: 100%;
+    }
+  }
+
+  .bd-blog-content {
+    position: relative;
+    border: 1px solid var(--bd-grey-1);
+    border-top: 0;
+    border-radius: 0 0 24px 24px;
+    padding: 20px 25px 17px;
+
+    .bd-blog-date {
+      position: absolute;
+      top: -34px;
+      inset-inline-start: 24px;
+      background: var(--bd-theme-2);
+      color: var(--bd-common-white);
+      padding: 5px 10px;
+      font-size: 16px;
+      z-index: 1;
+    }
+
+    .bd-blog-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+
+      span {
+        font-size: 16px;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+
+        .comment-icon {
+          color: var(--bd-theme-1);
+        }
+
+        a {
+          color: inherit;
+        }
+        a:hover {
+          color: var(--bd-theme-1);
+        }
+      }
+    }
+
+    .bd-blog-title {
+      font-weight: 500;
+
+      a {
+        color: inherit;
+      }
+      a:hover {
+        color: var(--bd-theme-1);
+      }
+    }
+  }
+}

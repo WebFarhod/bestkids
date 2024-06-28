@@ -1,0 +1,13 @@
+.shape-move {
+  inset-inline-start: 120px;
+  top: 50px;
+  animation: bd-updown-2 2s infinite alternate-reverse;
+}
+@keyframes shape-move {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,48 @@
+.bd-program-details-widget-content {
+  padding: 30px 32px 50px;
+  border-radius: 32px;
+  background-color: var(--bd-theme-6);
+
+  .bd-program-details-widget-title {
+    font-size: 45px;
+  }
+  @media (max-width: 575px) {
+    .bd-program-details-widget-title {
+      font-size: 30px;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px),
+    only screen and (min-width: 768px) and (max-width: 991px) {
+    .bd-program-details-widget-title {
+      font-size: 45px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bd-program-details-widget-title {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.bd-program-details-slider {
+  border-radius: 32px;
+  overflow: hidden;
+  height: 100%;
+
+  .bd-program-details-slider-thumb {
+    height: 100%;
+    width: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 32px;
+    }
+  }
+}
